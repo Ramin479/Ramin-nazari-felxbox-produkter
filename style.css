@@ -1,0 +1,342 @@
+
+/*små justeringar för allt som inte ligger i mina container.*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(233, 236, 239);
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+/*index start*/
+/*färeger till min meny*/
+.container a {
+    color: black;
+    text-decoration: none;
+    
+  
+}
+/*index*/
+.container {
+    display: flex;
+    flex-direction: row;
+    background: rgb(147, 168, 172);
+    justify-content:space-around;
+  position: sticky;
+  top: 0;
+    }
+
+/*min första rubrik i hemma sida*/
+.containerjoelex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/*min första rubrik*/
+.rubrik{
+    align-items: center;
+    flex-grow: 1;
+    background: rgb(147, 168, 172);
+    text-align: center; 
+    margin: 45px 150px;
+}
+
+/* första delen av index Hemsisda bilder*/
+.containerimage{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    
+}
+
+/*justeringar första del*/
+.containerimage img{
+    width: 300px;
+    height: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+/*små justeringar första del*/
+.containerimage img:hover {
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+
+/*min andra del av bilder på index hemsida*/
+.containerimage2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/*justeringar Andra del*/
+.containerimage2 img{
+    width: 300px;
+    height: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+/*små justeringar Andra del*/
+.containerimage2 img:hover{
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+
+/*min tredje del av bilder på index hemsida*/
+.containerimage3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/*justeringar tredje del*/
+.containerimage3 img{
+    width: 300px;
+    height: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+/*små justeringar tredje del*/
+.containerimage3 img:hover{
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+
+/*text index*/
+.containertext {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*justeringar text index*/
+.text1 {
+    align-items: center;
+    flex-grow: 1;
+    background: rgb(147, 168, 172);
+    text-align: center;
+    margin: 45px 150px;
+}
+/*index slut*/
+
+/*Produkt start*/
+/*rubtrik*/
+.container5{
+    display: flex;
+    text-decoration: row;
+    justify-content: space-between;
+}
+/*justeringar till rubriken*/
+.time {
+    align-items: center;
+    flex-grow: 1;
+    background: rgb(147, 168, 172);
+    text-align: center;
+    margin: 45px 150px;
+}
+
+/*container till mina produkt bilder*/
+.carousel{
+    overflow: hidden;
+    max-width: 600px;
+    position: relative;
+}
+
+
+/*Justeringar av mina prudokt bilder*/
+.carousel .carousel_item,
+.carousel .carousel_item--hidden{
+    display: none;
+}
+
+/*Justeringar av mina prudokt bilder*/
+.carousel .carousel_item img{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+/*Justeringar av mina prudokt bilder*/
+.carousel .carousel_item--visible{
+    display: block;
+    animation: fadeVisibility 0,5s;
+
+
+}
+
+/*Justeringar av mina prudokt bilder*/
+.carousel .carousel_actions{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*Justeringar av mina prudokt bilder*/
+.carousel .carousel_actions button{
+    border-radius: 50px;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+
+
+}
+
+/*Justeringar av mina prudokt bilder*/
+.carousel .carousel_actions button#carousel_button--prev{
+    margin-left: 20px;
+
+}
+
+/*Justeringar av mina prudokt bilder*/
+.carousel .carousel_actions button#carousel_button--prev{
+    margin-right: 20px;
+}
+
+@keyframes fadeVisibility {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: opacity linear;
+
+    }
+}
+/*prudokt slut*/
+
+/*konktakt start*/
+/*kontakt rubrik*/
+.containercontact{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+/*kontakt justering*/
+.contacttitle{
+    flex-grow: 1;
+    background: rgb(147, 168, 172);
+    text-align: center;
+    margin: 40px 400px 0 100px;
+
+}
+
+/*kontakt bilder*/
+.containercontactimg{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*justering kontakt bilder*/
+.contactimg{
+    margin-top: -80px;
+    margin-left: 1090px;
+}
+
+/*små justeringar kontakt bidler*/
+.containercontactimg img{
+    height: 400px;
+    width: 400px;
+}
+/*kontakt slut*/
+
+
+/*om oss start*/
+/*om oss text*/
+.containeraboutustext{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+/*justeringar text*/
+.text2{
+    flex-grow: 1;
+    align-items: center;
+    background: rgb(147, 168, 172);
+    text-align: center;
+    margin-top: 45px;
+    margin-right: 400px;
+    width: 1000px;
+}
+
+/*om oss bilder*/
+.containeraboutusimage{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*justeringar om oss bilder*/
+.containeraboutusimage img{
+    height: 500px;
+    width: 600px;
+    margin-top: 40px;
+    margin-right: 500px;
+}
+
+/*om oss del 2 text*/
+.containeraboutustext{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/*text Justeringar*/
+.text3{
+    margin-top: 100px;
+    flex-grow: 1;
+    background: rgb(147, 168, 172);
+    text-align: center;
+    margin-right: 200px;
+    width: 1000px;
+}
+/*om oss slut*/
+
+/*dokumentaion start*/
+.containerdocumentation {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+/*justeringar text*/
+.text4 {
+    align-items: center;
+    flex-grow: 1;
+    background: rgb(147, 168, 172);
+    text-align: center;
+    margin-top: 40px    ;
+}
+
+
+
+
+
+
+
+
+
+
+
