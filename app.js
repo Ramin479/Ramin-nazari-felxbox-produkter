@@ -18,10 +18,10 @@ function updateSlidePosition() {
         slide.classList .remove('carousel_item--visible');
         slide.classList.add('carousel_item--hidden');
     }
-    
+
     slides[slidePosition].classList.add('carousel_item--visible'); 
 }
-    
+
  function moveToNextSlide() {
     if (slidePosition === totalslides - 1) {
         slidePosition=0;
@@ -38,7 +38,6 @@ function moveToPrevSlide() {
     } else {
         slidePosition--;
     }
-     
+
     updateSlidePosition();
 }
-
